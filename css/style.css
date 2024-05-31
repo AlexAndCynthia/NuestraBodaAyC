@@ -1,0 +1,49 @@
+/* Colors */
+/* Fonts */
+/* Labels */
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+h1 {
+  font-family: "Alex Brush", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  text-align: center;
+  color: #026842;
+}
+
+h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #545756;
+}
+
+h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #888888;
+}
+
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 20px;
+  color: #000000;
+}
+
+/*# sourceMappingURL=style.css.map */
