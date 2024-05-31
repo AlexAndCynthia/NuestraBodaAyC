@@ -2,6 +2,9 @@ nav{
     height: 80px;
     display: flex;
     border-bottom: 1px solid #cecece;
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff;
     .navbar{
         width: 100%;
         display: flex;
@@ -9,7 +12,6 @@ nav{
         align-items: center;
         margin: 0px 14%;
         position: relative;
-        background-color: #ffffff;
         .logo-header{
             position: relative;
             display: inline-block;
@@ -76,7 +78,7 @@ nav{
             justify-content: center;
             z-index: 2;
             .ribbon-text{
-                height: 80px;
+                height: 81px;
                 color: #ffffff;
                 font-style: italic;
                 font-weight: 400;
@@ -91,7 +93,7 @@ nav{
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                transition: height 0.3s;
+                transition: padding-top 0.3s;
             }
             .rsvp-ribbon-bottom{
                 display: flex;
@@ -116,7 +118,7 @@ nav{
             }
             &:hover{
                 .ribbon-text{
-                    height: 95px;
+                    padding-top: 15px;
                 }
             }
         }

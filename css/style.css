@@ -55,6 +55,9 @@ nav {
   height: 80px;
   display: flex;
   border-bottom: 1px solid #cecece;
+  position: fixed;
+  width: 100%;
+  background-color: #ffffff;
 }
 nav .navbar {
   width: 100%;
@@ -63,7 +66,6 @@ nav .navbar {
   align-items: center;
   margin: 0px 14%;
   position: relative;
-  background-color: #ffffff;
 }
 nav .navbar .logo-header {
   position: relative;
@@ -131,7 +133,7 @@ nav .navbar .rsvp-ribbon {
   z-index: 2;
 }
 nav .navbar .rsvp-ribbon .ribbon-text {
-  height: 80px;
+  height: 81px;
   color: #ffffff;
   font-style: italic;
   font-weight: 400;
@@ -146,7 +148,7 @@ nav .navbar .rsvp-ribbon .ribbon-text {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: height 0.3s;
+  transition: padding-top 0.3s;
 }
 nav .navbar .rsvp-ribbon .rsvp-ribbon-bottom {
   display: flex;
@@ -170,7 +172,7 @@ nav .navbar .rsvp-ribbon .rsvp-ribbon-bottom .triangle-right {
   border-bottom: 8px solid transparent;
 }
 nav .navbar .rsvp-ribbon:hover .ribbon-text {
-  height: 95px;
+  padding-top: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
