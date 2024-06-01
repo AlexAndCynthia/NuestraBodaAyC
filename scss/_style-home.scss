@@ -61,4 +61,60 @@
             height: 450px;
         }
     }
+    .home-continue{
+        display: flex;
+        flex-direction: column;
+        z-index: 5;
+        position: absolute;
+        bottom: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: floating 1.5s linear infinite;
+        gap: 10px;
+        justify-content: center;
+        align-content: center;
+        .music-player{
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            border: 2px solid $background-primary-color;
+            box-shadow: rgba(0, 0, 0, 0.3) 2px 2px 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i{
+                color: $background-primary-color;
+                text-shadow: rgba(0, 0, 0, 0.3) 2px 2px 10px;
+                font-size: 20px;
+                padding: 10px;
+            }
+            #play-button{
+                margin-top: 1px;
+                margin-left: 2px;
+                display: block;
+                cursor: pointer;
+            }
+            #pause-button{
+                display: none;
+                margin-top: 1px;
+                cursor: pointer;
+            }
+        }
+        .fa-angles-down{
+            color: $background-primary-color;
+            text-shadow: rgba(0, 0, 0, 0.3) 2px 2px 10px;
+            text-align: center;
+        }
+        @keyframes floating {
+            0%{
+                margin-bottom: 0px;
+            }
+            50%{
+                margin-bottom: 20px;
+            }
+            100%{
+                margin-bottom: 0px;
+            }
+        }
+    }
 }
