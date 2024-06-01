@@ -52,4 +52,16 @@ document.addEventListener('DOMContentLoaded', () => {
             startSlideShow(); // Reiniciar el slideshow después de seleccionar manualmente
         });
     });
+
+    // Modificación de Scroll apra efecto parallax
+    window.addEventListener('scroll',function(){
+        let slidescontent=document.querySelector('.slides');
+        let homelogo=document.querySelector('.home-logo');
+        let homecontinue=document.querySelector('.home-continue');
+        let value = window.scrollY;
+        let altura = window.innerHeight * 0.8;
+        slidescontent.style.top = value*0.5 + 'px';
+        homelogo.style.opacity = 1 - (value/altura);
+        homecontinue.style.opacity = 1 - (value/altura);
+    })
 });
