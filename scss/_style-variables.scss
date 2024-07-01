@@ -66,3 +66,20 @@ p{
 a{
     text-decoration: none;
 }
+
+.circle-icon{
+    width: 120px;
+    height: 120px;
+    background-color: $background-tertiary-color;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 1s;
+    position: relative;
+    img{
+        padding: 10px;
+    }
+    &:hover{
+        transform: rotateY(360deg);
+    }
+}
