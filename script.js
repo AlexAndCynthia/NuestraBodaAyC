@@ -63,5 +63,37 @@ document.addEventListener('DOMContentLoaded', () => {
         slidescontent.style.top = value*0.5 + 'px';
         homelogo.style.opacity = 1 - (value/altura);
         homecontinue.style.opacity = 1 - (value/altura);
-    })
+    });
+
+    // COUNTDOWN
+
+    const countdownDate = new Date("Sept 07, 2024 15:00:00").getTime();
+    
+    function formatNumber(number) {
+        return number < 10 ? `0${number}` : number;
+    }
+
+    const interval = setInterval(() => {
+        const now = new Date().getTime();
+        const distance = countdownDate - now;
+
+        // Cálculo de mes, días, horas, minutos y segundos
+        const months = Math.floor(distance / (1000 * 60 * 60 * 24 * 30.42));
+        const remaining = distance % (1000 * 60 * 60 * 24 * 30.44);
+        const days = Math.floor((remaining / (1000 * 60 * 60 * 24)));
+        const hours = Math.floor((remaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((remaining % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((remaining % (1000 * 60)) / 1000);
+        document.getElementById("months").textContent = formatNumber(months);
+        document.getElementById("days").textContent = formatNumber(days);
+        document.getElementById("hours").textContent = formatNumber(hours);
+        document.getElementById("minutes").textContent = formatNumber(minutes);
+        document.getElementById("seconds").textContent = formatNumber(seconds);
+
+        if (distance < 0) {
+            clearInterval(interval);
+            document.getElementById("countdown").innerHTML = "¡Recién casados!";
+        }
+    }, 1000);
 });
+
