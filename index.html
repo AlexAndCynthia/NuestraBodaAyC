@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <!-- NAV BAR 
     <nav>
         <div class="navbar">
             <a href="" class="logo-header">
@@ -39,7 +40,9 @@
             </a>
         </div>
     </nav>
+    -->
     <main>
+        <!-- HOME -->
         <section id="home">
             <div class="tab">
                 <div id="tab1" class="circle" onclick="showSlide(1)"></div>
@@ -51,7 +54,7 @@
                 <img id="slide2" src="./assets/img/nosotros-2.png" alt="">
                 <img id="slide3" src="./assets/img/Anillos-AyC.png" alt="">
             </div>
-            <a href="" class="home-continue">
+            <a href="#home-continue" class="home-continue">
                 <div class="music-player">
                     <div id="play-button"><i class="fa-solid fa-play"></i></div>
                     <!-- <div id="pause-button"><i class="fa-solid fa-pause"></i></div> -->
@@ -62,24 +65,51 @@
                 <img src="./assets/img/AyC-hero-logo.png" alt="">
             </div>
         </section>
-        <section id="home-continue">
-            <div class="circle-icon"><img src="./assets/icons/rings.png" alt=""></div>
-            <h1>¡Vamos a casarnos!</h1>
-            <div class="husband-bride">
-                <div class="photo-data">
-                    <img class="photo" src="./assets/img/Alex.png" alt="">
-                    <h2>Alex</h2>
+        <!-- HOME CONTINUE -->
+        <section id="home-continue" class="hidden-element hidden">
+            <div class="background-top-1"></div>
+            <div class="background-bottom-1"></div>
+            <div class="background-streak-top-1"></div>
+            <div class="background-streak-bottom-1"></div>
+            <div class="background-left-leaf"></div>
+            <div class="background-right-leaf"></div>
+            <div class="wave" id="wave1" style="--i:1;"></div>
+            <div class="wave" id="wave2" style="--i:2;"></div>
+            <div class="wave" id="wave3" style="--i:3;"></div>
+            <div class="wave" id="wave4" style="--i:4;"></div>
+            <!-- <div class="circle-icon"><img src="./assets/icons/rings.png" alt=""></div> -->
+            <div class="container-home">
+                <h1>¡Vamos a Casarnos!</h1>
+                <div class="husband-bride">
+                    <div class="photo-data">
+                        <img class="photo" src="./assets/img/Alex.png" alt="">
+                        <h2>Alex</h2>
+                    </div>
+                    <img id="union" src="./assets/img/intro-separator.png" alt="">
+                    <div class="photo-data">
+                        <img class="photo" src="./assets/img/Cynthia.png" alt="">
+                        <h2>Cynthia</h2>
+                    </div>
                 </div>
-                <img id="union" src="./assets/img/intro-separator.png" alt="">
-                <div class="photo-data">
-                    <img class="photo" src="./assets/img/Cynthia.png" alt="">
-                    <h2>Cynthia</h2>
-                </div>
+                <p>Y queremos que seas parte de nuestra historia, así que guarda la fecha en tu agenda</p>
+                <a href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Boda+Alex+y+Cynthia&dates=20240907T170000Z/20240908T040000Z&details=Descripci%C3%B3n+del+evento&location=Lugar+del+evento" target="_blank">
+                    <div class="button">
+                        <div class="button-ribbon-left">
+                            <div class="triangle-top-left"></div>
+                            <div class="triangle-bottom-left"></div>
+                        </div>
+                        <h2>07 de Septiembre, 2024</h2>
+                        <div class="button-ribbon-right">
+                            <div class="triangle-top-right"></div>
+                            <div class="triangle-bottom-right"></div>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <p>Y queremos que seas parte de nuestra historia, así que guarda en tu agenda</p>
-            <h2>07 de Septiembre, 2024 — Tiquipaya, Cochabamba</h2>
+            
         </section>
-        <section id="countdown-section">
+        <!-- COUNTDOWN -->
+        <section id="countdown-section" class="hidden-element hidden">
             <div class="countdown-container">
                 <h1>Faltan sólo</h1>
                 <div id="countdown">
@@ -89,8 +119,276 @@
                     <div><span id="minutes"></span>minutos</div>
                     <div><span id="seconds"></span>segundos</div>
                 </div>
+                <div class="background-leaf-center"></div>
+            </div>
+            <div class="wave" id="wave1" style="--i:1;"></div>
+            <div class="wave" id="wave2" style="--i:2;"></div>
+            <div class="wave" id="wave3" style="--i:3;"></div>
+            <div class="wave" id="wave4" style="--i:4;"></div>
+        </section>
+        <!-- PARENTS -->
+        <section id="parents" class="hidden-element hidden">
+            <div class="container-parents">
+                <h1>Con la bendición de nuestros padres</h1>
+                <div class="husband-bride-parents">
+                    <div class="parent" id="husband-parents">
+                        <h2>Marco Orihuela Campero</h2>
+                        <h2>Miriam Rojas Hinojosa</h2>
+                    </div>
+                    <img id="salud" src="./assets/icons/salud.png" alt="">
+                    <div class="parent" id="bride-parents">
+                        <h2>Marco Orihuela Campero</h2>
+                        <h2>Miriam Rojas Hinojosa</h2>
+                    </div>
+                </div>
+                <p>Que siempre han estado a nuestro lado y nos han enseñado el verdadero significado del amor y el compromiso.</p>
+            </div>
+            <div class="background-leaf-left"></div>
+            <div class="background-leaf-right"></div>
+            <div class="background-leaf-top-left"></div>
+            <div class="background-leaf-top-right"></div>
+            <div class="wave" id="wave1" style="--i:1;"></div>
+            <div class="wave" id="wave2" style="--i:2;"></div>
+            <div class="wave" id="wave3" style="--i:3;"></div>
+            <div class="wave" id="wave4" style="--i:4;"></div>
+        </section>
+        <!-- PLACE -->
+        <section id="place" class="hidden-element hidden">
+            <div class="container-place">
+                <h1>Ceremonia y Celebración</h1>
+                <div class="container-place-info">
+                    <div class="info">
+                        <div class="circle-icon" style="background-color: #026842; opacity: 0.5;"><img src="./assets/icons/calendario.png" alt=""></div>
+                        <h2 class="title-info">Día</h2>
+                        <p>Sábado 07 de Septiembre 13:00</p>
+                        <a href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Boda+Alex+y+Cynthia&dates=20240907T170000Z/20240908T040000Z&details=Descripci%C3%B3n+del+evento&location=Lugar+del+evento" target="_blank">
+                            <div class="button">
+                                <div class="button-ribbon-left">
+                                    <div class="triangle-top-left"></div>
+                                    <div class="triangle-bottom-left"></div>
+                                </div>
+                                <h2>Agendar</h2>
+                                <div class="button-ribbon-right">
+                                    <div class="triangle-top-right"></div>
+                                    <div class="triangle-bottom-right"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="info">
+                        <div class="circle-icon" style="background-color: #026842; opacity: 0.5;"><img src="./assets/icons/ubicacion.png" alt=""></div>
+                        <h2 class="title-info">Lugar</h2>
+                        <p>Salón Jardín Victoria <br> Eventos Sociales</p>
+                        <a href="https://maps.app.goo.gl/4N6EGS5sfeR6D9JLA" target="_blank">
+                            <div class="button">
+                                <div class="button-ribbon-left">
+                                    <div class="triangle-top-left"></div>
+                                    <div class="triangle-bottom-left"></div>
+                                </div>
+                                <h2>Cómo llegar</h2>
+                                <div class="button-ribbon-right">
+                                    <div class="triangle-top-right"></div>
+                                    <div class="triangle-bottom-right"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <img id="salon" src="./assets/img/salon-de-eventos.png" alt="">
+                </div>
+            </div>
+            <div class="wave" id="wave1" style="--i:1;"></div>
+            <div class="wave" id="wave2" style="--i:2;"></div>
+            <div class="wave" id="wave3" style="--i:3;"></div>
+            <div class="wave" id="wave4" style="--i:4;"></div>
+        </section>
+        <!-- SCHEDULE -->
+        <section id="schedule" class="hidden-element hidden">
+            <div class="container-schedule">
+                <h1>Cronograma de la Boda</h1>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-circle"><img src="./assets/icons/heart.png" alt=""></div>
+                        <div class="timeline-content">
+                            <h3>08:00 - 09:30 AM: Preparativos de los Novios</h3>
+                            <p>Maquillaje y peinado para la novia. Vestimenta del novio y la novia. Sesión de fotos inicial.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-circle"><img src="./assets/icons/heart.png" alt=""></div>
+                        <div class="timeline-content">
+                            <h3>10:00 - 11:00 AM: Llegada de Invitados</h3>
+                            <p>Los invitados empiezan a llegar al lugar de la ceremonia. Recepción y orientación por parte del personal.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-circle"><img src="./assets/icons/heart.png" alt=""></div>
+                        <div class="timeline-content">
+                            <h3>11:00 - 12:00 PM: Ceremonia</h3>
+                            <p>Inicio de la ceremonia de boda. Intercambio de votos y anillos. Firma del acta de matrimonio. Salida de los recién casados.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-circle"><img src="./assets/icons/heart.png" alt=""></div>
+                        <div class="timeline-content">
+                            <h3>12:00 - 01:00 PM: Recepción de la Ceremonia</h3>
+                            <p>Felicitaciones y abrazos. Fotos de grupo con los invitados.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-circle"><img src="./assets/icons/heart.png" alt=""></div>
+                        <div class="timeline-content">
+                            <h3>01:00 - 02:00 PM: Coctel de Bienvenida</h3>
+                            <p>Los invitados disfrutan de aperitivos y bebidas. Música de fondo.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-circle"><img src="./assets/icons/heart.png" alt=""></div>
+                        <div class="timeline-content">
+                            <h3>02:00 - 04:00 PM: Almuerzo/Banquete</h3>
+                            <p>Entrada de los novios. Discurso de bienvenida. Servicio de la comida principal. Brindis y discursos (padres, padrinos, etc.).</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-circle"><img src="./assets/icons/heart.png" alt=""></div>
+                        <div class="timeline-content">
+                            <h3>04:00 - 05:00 PM: Primer Baile y Baile con los Padres</h3>
+                            <p>Primer baile de los novios. Baile de la novia con su padre y el novio con su madre.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-circle"><img src="./assets/icons/heart.png" alt=""></div>
+                        <div class="timeline-content">
+                            <h3>05:00 - 08:00 PM: Fiesta y Baile</h3>
+                            <p>Música y baile para todos los invitados. Apertura de la pista de baile.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-circle"><img src="./assets/icons/heart.png" alt=""></div>
+                        <div class="timeline-content">
+                            <h3>08:00 - 09:00 PM: Corte de la Tarta</h3>
+                            <p>Corte de la tarta nupcial. Fotos y brindis con la tarta.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-circle"><img src="./assets/icons/heart.png" alt=""></div>
+                        <div class="timeline-content">
+                            <h3>09:00 - 11:00 PM: Más Fiesta y Sorpresas</h3>
+                            <p>Continuación de la fiesta. Posibles sorpresas como fuegos artificiales o lanzamientos de globos.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-circle"><img src="./assets/icons/heart.png" alt=""></div>
+                        <div class="timeline-content">
+                            <h3>11:00 - 12:00 AM: Despedida de los Novios</h3>
+                            <p>Último baile. Despedida de los novios. Salida de los invitados.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-circle"><img src="./assets/icons/heart.png" alt=""></div>
+                        <div class="timeline-content">
+                            <h3>12:00 AM: Fin del Evento</h3>
+                            <p>Finalización oficial del evento. Desmontaje y recogida del lugar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="background-top-1"></div>
+            <div class="background-bottom-1"></div>
+            <div class="background-streak-top-1"></div>
+            <div class="background-streak-bottom-1"></div>
+            <div class="background-left-leaf"></div>
+            <div class="background-right-leaf"></div>
+            <div class="wave" id="wave1" style="--i:1;"></div>
+            <div class="wave" id="wave2" style="--i:2;"></div>
+            <div class="wave" id="wave3" style="--i:3;"></div>
+            <div class="wave" id="wave4" style="--i:4;"></div>
+        </section>
+        <!-- PARTY -->
+        <section id="party" class="hidden-element hidden">
+            <div class="container-party">
+                <h1>Detalles importantes</h1>
+                <p>Para que nuestra celebración sea perfecta y todos puedan disfrutar al máximo, queremos compartir algunas indicaciones importantes:</p>
+                <div class="container-party-info">
+                    <div class="info">
+                        <div class="circle-icon" style="background-color: #026842; opacity: 0.5;"><img src="./assets/icons/corbata-de-mono.png" alt=""></div>
+                        <h2 class="title-info">CÓDIGO DE VESTIMENTA</h2>
+                        <p>Nuestra celebración será un evento elegante y formal. Les pedimos que se vistan de acuerdo a la ocasión con atuendos de gala:</p>
+                        <ul>
+                            <li>Damas: Vestido largo o de cocktail.</li>
+                            <li>Caballeros: Traje y corbata.</li>
+                        </ul>
+                        <!--
+                        <a href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Boda+Alex+y+Cynthia&dates=20240907T170000Z/20240908T040000Z&details=Descripci%C3%B3n+del+evento&location=Lugar+del+evento" target="_blank">
+                            <div class="button">
+                                <div class="button-ribbon-left">
+                                    <div class="triangle-top-left"></div>
+                                    <div class="triangle-bottom-left"></div>
+                                </div>
+                                <h2>Agendar</h2>
+                                <div class="button-ribbon-right">
+                                    <div class="triangle-top-right"></div>
+                                    <div class="triangle-bottom-right"></div>
+                                </div>
+                            </div>
+                        </a>
+                        -->
+                    </div>
+                    <div class="info">
+                        <div class="circle-icon" style="background-color: #026842; opacity: 0.5;"><img src="./assets/icons/bebe.png" alt=""></div>
+                        <h2 class="title-info">ASISTENCIA INFANTIL</h2>
+                        <p>Debido a limitaciones de espacio y para asegurar que todos disfruten del evento sin preocupaciones, hemos decidido que nuestra celebración sea exclusivamente para adultos. Agradecemos su comprensión y esperamos que puedan disfrutar de una noche de celebración con nosotros.</p>
+                        <!-- 
+                        <a href="https://maps.app.goo.gl/4N6EGS5sfeR6D9JLA" target="_blank">
+                            <div class="button">
+                                <div class="button-ribbon-left">
+                                    <div class="triangle-top-left"></div>
+                                    <div class="triangle-bottom-left"></div>
+                                </div>
+                                <h2>Cómo llegar</h2>
+                                <div class="button-ribbon-right">
+                                    <div class="triangle-top-right"></div>
+                                    <div class="triangle-bottom-right"></div>
+                                </div>
+                            </div>
+                        </a>
+                        -->
+                    </div>
+                </div>
+            </div>
+            <div class="wave" id="wave1" style="--i:1;"></div>
+            <div class="wave" id="wave2" style="--i:2;"></div>
+            <div class="wave" id="wave3" style="--i:3;"></div>
+            <div class="wave" id="wave4" style="--i:4;"></div>
+        </section>
+        <!-- ATTENDANCE -->
+        <section id="attendance" class="hidden-element hidden">
+            <div class="container-attendance">
+                <div class="background-top-1"></div>
+                <div class="background-bottom-1"></div>
+                <div class="background-streak-top-1"></div>
+                <div class="background-streak-bottom-1"></div>
+                <div class="background-left-leaf"></div>
+                <div class="background-right-leaf"></div>
+                <div class="circle-icon" style="height: 150px; width: 150px; background-color: #026842; opacity: 0.5;"><img src="./assets/icons/invitacion-de-boda.png" alt="" style="margin: 15px;"></div>
+                <h1>Esperamos contar contigo en este día <br> tan especial para nosotros</h1>
+                <a href="" target="_blank">
+                    <div class="button">
+                        <div class="button-ribbon-left">
+                            <div class="triangle-top-left"></div>
+                            <div class="triangle-bottom-left"></div>
+                        </div>
+                        <h2>Confirmar asistencia</h2>
+                        <div class="button-ribbon-right">
+                            <div class="triangle-top-right"></div>
+                            <div class="triangle-bottom-right"></div>
+                        </div>
+                    </div>
+                </a>
             </div>
         </section>
     </main>
+    <footer class="hidden-element hidden">
+        <p>Hecho con <img src="./assets/icons/heart.png" alt=""> por jessicaori</p>
+    </footer>
 </body>
 </html>

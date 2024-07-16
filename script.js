@@ -65,6 +65,10 @@ document.addEventListener('DOMContentLoaded', () => {
         homecontinue.style.opacity = 1 - (value/altura);
     });
 
+    // PLAY BUTTON
+
+    
+
     // COUNTDOWN
 
     const countdownDate = new Date("Sept 07, 2024 15:00:00").getTime();
@@ -95,5 +99,23 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById("countdown").innerHTML = "¡Recién casados!";
         }
     }, 1000);
+
+    // Schedule
+
+    window.addEventListener('scroll', () => {
+        const items = document.querySelectorAll('.timeline-item');
+        const windowHeight = window.innerHeight;
+    
+        items.forEach(item => {
+            const rect = item.getBoundingClientRect();
+            const itemCenter = rect.top + rect.height / 2;
+    
+            if (itemCenter >= windowHeight / 2 - rect.height / 2 && itemCenter <= windowHeight / 2 + rect.height / 2) {
+                item.classList.add('highlight');
+            } else {
+                item.classList.remove('highlight');
+            }
+        });
+    });
 });
 
