@@ -110,7 +110,13 @@
                 align-items: center;
                 .info{
                     width: 78%;
-                    padding:20px 0px;
+                    padding:20px 5px;
+                }
+            }
+            ul{
+                li{
+                    font-size: 16px;
+                    padding-right: 10px;
                 }
             }
         }

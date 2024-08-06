@@ -107,3 +107,13 @@
         
     }
 }
+
+@media screen and (max-width: 768px){
+    #attendance{
+        .container-attendance{
+            h1{
+                width: 80%;
+            }
+        }
+    }
+}

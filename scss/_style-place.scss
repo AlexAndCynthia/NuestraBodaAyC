@@ -11,6 +11,8 @@
         flex-direction: column;
         transform: translatey(-50px);
         position: relative;
+        justify-items: center;
+        align-items: center;
         .container-place-info{
             display: flex;
             gap: 20px;
@@ -95,6 +97,9 @@
     #place{
         height: auto;
         .container-place{
+            h1{
+                width: 90%;
+            }
             transform: translatey(0px);
             margin-bottom: 20px;
             .container-place-info{
@@ -102,7 +107,7 @@
                 justify-content: center;
                 align-items: center;
                 .info{
-                    width: 80%;
+                    width: 70%;
                     padding: 20px;
                     p{
                         height: auto;
@@ -110,8 +115,9 @@
                     }
                 }
                 #salon {
-                    width: 87%;
+                    width: 83%;
                     margin: 0;
+                    height: auto;
                 }
             }
         }

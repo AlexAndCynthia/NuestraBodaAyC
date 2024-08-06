@@ -233,6 +233,11 @@
     #schedule{
         .container-schedule{
             margin-top: 100px;
+            align-items: center;
+            justify-content: center;
+            h1{
+                width: 80%;
+            }
             .timeline{
                 display: flex;
                 flex-direction: column;

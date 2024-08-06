@@ -28,13 +28,11 @@
             }
             #husband-parents{
                 h2{
-                    width: 500px;
                     text-align: right;
                 }
             }
             #bride-parents{
                 h2{
-                    width: 500px;
                     text-align: left;
                 }
             }
@@ -186,17 +184,26 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        min-height: 100vh;
+        padding-top: 80px;
+        padding-bottom: 80px;
         .container-parents{
             width: 80%;
             margin-top: 50px;
             .husband-bride-parents{
                 flex-direction: column;
                 gap: 20px;
+                justify-content: center;
+                align-items: center;
                 .parent{
+                    justify-content: center;
+                    align-items: center;
                     h2{
                         font-size: 16px;
+                        text-align: center;
                     }
                 }
+                
                 #salud{
                     height: 100px;
                 }
@@ -232,4 +239,5 @@
             right: -110px;
         }
     }
+
 }

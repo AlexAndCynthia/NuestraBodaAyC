@@ -100,9 +100,11 @@
     #countdown-section {
         height: auto;
         .countdown-container{
+            padding: 0px 20px;
             #countdown {
                 gap: 20px;
                 font-size: 16px;
+                flex-wrap: wrap;
                 span {
                     font-size: 40px;
                 }

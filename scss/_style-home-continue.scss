@@ -201,7 +201,9 @@
 
 @media screen and (max-width: 768px){
     #home-continue{
-        height: 100vh;
+        min-height: 100vh;
+        padding-top: 80px;
+        padding-bottom: 80px;
         .container-home{
             transform: translatey(-40px);
             .husband-bride{
