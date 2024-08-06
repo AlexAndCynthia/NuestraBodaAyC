@@ -63,8 +63,8 @@
     .home-continue{
         display: flex;
         flex-direction: column;
-        z-index: 5;
         position: absolute;
+        z-index: 10;
         bottom: 25px;
         left: 50%;
         transform: translateX(-50%);

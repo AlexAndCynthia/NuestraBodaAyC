@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // COUNTDOWN
 
-    const countdownDate = new Date("Sept 07, 2024 15:00:00").getTime();
+    const countdownDate = new Date("Sept 07, 2024 16:00:00").getTime();
     
     function formatNumber(number) {
         return number < 10 ? `0${number}` : number;
