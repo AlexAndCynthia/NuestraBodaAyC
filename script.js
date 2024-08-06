@@ -149,6 +149,19 @@ document.addEventListener('DOMContentLoaded', () => {
     window.onload = function() {
         window.location.hash = '#home';
     };
+
+    // Loading screen
+    const loadingScreen = document.getElementById('loading-screen');
+    const mainContent = document.getElementById('main-content');
+
+    setTimeout(() => {
+        loadingScreen.style.opacity = '0';
+    }, 5000); // 5 segundos
+
+    loadingScreen.addEventListener('transitionend', () => {
+        loadingScreen.style.display = 'none';
+        mainContent.classList.add('show-content');
+    });
     
 });
 
