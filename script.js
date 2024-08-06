@@ -117,5 +117,38 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Background animations
+    // Función para agregar el observador de intersección a un contenedor
+    function addIntersectionObserver(containerId) {
+        const container = document.getElementById(containerId);
+        if (!container) return;
+
+        const hiddenElement = container.querySelector('.bg-item');
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    container.classList.add('scrolled');
+                } else {
+                    container.classList.remove('scrolled');
+                }
+            });
+        }, { threshold: 0.5 });
+
+        observer.observe(container);
+    }
+
+    addIntersectionObserver('home-continue');
+    addIntersectionObserver('parents'); 
+    addIntersectionObserver('schedule'); 
+    addIntersectionObserver('attendance'); 
+    addIntersectionObserver('dev-name'); 
+    
+    // Ir a la parte superior al actualizar
+    window.onload = function() {
+        window.location.hash = '#home';
+    };
+    
 });
 

@@ -27,6 +27,14 @@
         position: absolute;
         top: 0;
         left: 0;
+
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: all 1s ease-out;
+    }
+    &.scrolled .background-top-1 {
+        opacity: 1;
+        transform: translate(0,0);
     }
     .background-bottom-1{
         background-image: url(../assets/img/background-decoration/background-top.png);
@@ -38,6 +46,14 @@
         position: absolute;
         bottom: 0px;
         right: 0;
+    
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: all 1s ease-out;
+    }
+    &.scrolled .background-bottom-1 {
+        opacity: 1;
+        transform: translate(0,0);
     }
     .background-streak-top-1{
         background-image: url(../assets/img/background-decoration/background-streak-top-lightgreen.png);
