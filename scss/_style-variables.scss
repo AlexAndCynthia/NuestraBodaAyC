@@ -17,9 +17,6 @@ $paragraph-font-family: Georgia, Times, "Times New Roman", serif;
 
 /* Labels */
 
-*{
-    overflow-x: hidden ;
-}
 html{
     scroll-behavior: smooth;
 }
@@ -29,6 +26,10 @@ body{
     padding: 0;
     background-color: #ffffff;
     color: $paragrap-primary-color;
+    overflow-x: hidden;
+}
+
+main{
     overflow-x: hidden;
 }
 
