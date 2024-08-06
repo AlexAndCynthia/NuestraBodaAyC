@@ -15,7 +15,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 20px;
+            gap: 40px;
             .parent{
                 h2{
                     text-align: center;
@@ -25,6 +25,18 @@
             #salud{
                 height: 150px;
                 filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5)); 
+            }
+            #husband-parents{
+                h2{
+                    width: 500px;
+                    text-align: right;
+                }
+            }
+            #bride-parents{
+                h2{
+                    width: 500px;
+                    text-align: left;
+                }
             }
         }
         h1{
