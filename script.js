@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Cálculo de mes, días, horas, minutos y segundos
         const months = Math.floor(distance / (1000 * 60 * 60 * 24 * 30.42));
-        const remaining = distance % (1000 * 60 * 60 * 24 * 30.44);
+        const remaining = distance % (1000 * 60 * 60 * 24 * 31);
         const days = Math.floor((remaining / (1000 * 60 * 60 * 24)));
         const hours = Math.floor((remaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutes = Math.floor((remaining % (1000 * 60 * 60)) / (1000 * 60));
