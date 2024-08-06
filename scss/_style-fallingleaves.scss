@@ -5,6 +5,7 @@
     width: 100%;
     height: 100%;
     z-index: 1111;
+    pointer-events: none;
     #falling-leaves-container{
         display: flex;
         justify-content: space-between;
@@ -20,7 +21,6 @@
                 &:nth-child(#{$i}){
                     animation: falling+random(2) 10s linear infinite;
                     animation-delay: random(10) + random(9)/10 + s;
-
                 }
             }
             /*

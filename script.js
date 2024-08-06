@@ -67,7 +67,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // PLAY BUTTON
 
-    
+    document.getElementById('play-button').addEventListener('click', function() {
+        var audio = document.getElementById('song');
+        audio.play();
+    });
 
     // COUNTDOWN
 
