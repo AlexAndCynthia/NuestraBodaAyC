@@ -120,7 +120,7 @@ a {
 }
 .button:hover {
   transform: scale(1.08);
-  filter: drop-shadow(1px 1px 4px rgba(151, 233, 192, 0.5));
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.3));
 }
 .button:hover h2 {
   color: white;
@@ -551,7 +551,7 @@ nav .navbar .rsvp-ribbon:hover .ribbon-text {
 }
 #home-continue .container-home h1 {
   margin-top: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   z-index: 1;
 }
 #home-continue .container-home .husband-bride {
@@ -564,6 +564,7 @@ nav .navbar .rsvp-ribbon:hover .ribbon-text {
   width: 300px;
   border-radius: 50%;
   border: 15px solid #DCDCDC;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.3));
 }
 #home-continue .container-home .husband-bride .photo-data h2 {
   text-align: center;
@@ -574,6 +575,7 @@ nav .navbar .rsvp-ribbon:hover .ribbon-text {
   width: 100px;
   height: 100px;
   object-fit: cover;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));
 }
 #home-continue .container-home a {
   transition: transform 0.5s;
@@ -634,7 +636,7 @@ nav .navbar .rsvp-ribbon:hover .ribbon-text {
   left: 0;
   opacity: 0;
   transform: translateX(-100%);
-  transition: all 1s ease-out;
+  transition: all 2s ease-out;
 }
 #home-continue.scrolled .background-top-1 {
   opacity: 1;
@@ -652,7 +654,7 @@ nav .navbar .rsvp-ribbon:hover .ribbon-text {
   right: 0;
   opacity: 0;
   transform: translateX(-100%);
-  transition: all 1s ease-out;
+  transition: all 2s ease-out;
 }
 #home-continue.scrolled .background-bottom-1 {
   opacity: 1;
@@ -668,13 +670,13 @@ nav .navbar .rsvp-ribbon:hover .ribbon-text {
   top: 450px;
   left: -23%;
   rotate: 230deg;
-  transform: scaley(-1);
-  transform: scaleX(-1);
+  transform: scaleX(-1) translateY(-100%);
   opacity: 0;
   transition: all 2s ease-out;
 }
 #home-continue.scrolled .background-streak-top-1 {
   opacity: 1;
+  transform: scaleX(-1) translateY(-10%);
 }
 #home-continue .background-streak-bottom-1 {
   background-image: url(../assets/img/background-decoration/background-streaksimple-top-lightgreen.png);
@@ -686,8 +688,13 @@ nav .navbar .rsvp-ribbon:hover .ribbon-text {
   top: 0px;
   right: -33%;
   rotate: 20deg;
-  transform: scaley(-1);
-  transform: scaleX(-1);
+  transform: scalex(-1) translateX(-40%);
+  opacity: 0;
+  transition: all 2s ease-out;
+}
+#home-continue.scrolled .background-streak-bottom-1 {
+  opacity: 1;
+  transform: scaleX(-1) translatey(0);
 }
 #home-continue .background-left-leaf {
   background-image: url(../assets/img/background-decoration/leaf-5-lightgreen.png);
@@ -698,8 +705,14 @@ nav .navbar .rsvp-ribbon:hover .ribbon-text {
   position: absolute;
   bottom: 0;
   left: -15%;
-  transform: scalex(1);
+  transform: scalex(1) translateY(40%);
   rotate: 100deg;
+  opacity: 0;
+  transition: all 2s ease-out;
+}
+#home-continue.scrolled .background-left-leaf {
+  opacity: 1;
+  transform: scaleX(1) translatey(0);
 }
 #home-continue .background-right-leaf {
   background-image: url(../assets/img/background-decoration/leaf-2-lightgreen.png);
@@ -711,7 +724,13 @@ nav .navbar .rsvp-ribbon:hover .ribbon-text {
   top: -55px;
   right: -28%;
   rotate: -5deg;
-  transform: scale(1, -1);
+  transform: scale(1, -1) translate(50%);
+  opacity: 0;
+  transition: all 2s ease-out;
+}
+#home-continue.scrolled .background-right-leaf {
+  opacity: 1;
+  transform: scale(1, -1) translatey(0);
 }
 
 @media screen and (max-width: 768px) {
@@ -1578,19 +1597,19 @@ nav .navbar .rsvp-ribbon:hover .ribbon-text {
 #attendance .background-top-1 {
   background-image: url(../assets/img/background-decoration/background-top.png);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  width: 30%;
+  background-size: contain;
+  width: 50%;
   height: 40%;
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
   transform: translateX(-100%);
-  transition: all 1s ease-out;
+  transition: all 2s ease-out;
 }
 #attendance.scrolled .background-top-1 {
   opacity: 1;
-  transform: translate(0, 0);
+  transform: translateX(0);
 }
 #attendance .background-bottom-1 {
   background-image: url(../assets/img/background-decoration/background-top.png);
@@ -1604,11 +1623,11 @@ nav .navbar .rsvp-ribbon:hover .ribbon-text {
   right: 0;
   opacity: 0;
   transform: translateX(-100%);
-  transition: all 1s ease-out;
+  transition: all 2s ease-out;
 }
 #attendance.scrolled .background-bottom-1 {
   opacity: 1;
-  transform: translate(0, 0);
+  transform: translateX(0);
 }
 #attendance .background-streak-top-1 {
   background-image: url(../assets/img/background-decoration/background-streak-top-lightgreen.png);
@@ -1620,8 +1639,13 @@ nav .navbar .rsvp-ribbon:hover .ribbon-text {
   top: 450px;
   left: -23%;
   rotate: 230deg;
-  transform: scaley(-1);
-  transform: scaleX(-1);
+  transform: scaleX(-1) translateY(-100%);
+  opacity: 0;
+  transition: all 2s ease-out;
+}
+#attendance.scrolled .background-streak-top-1 {
+  opacity: 1;
+  transform: scaleX(-1) translateY(-10%);
 }
 #attendance .background-streak-bottom-1 {
   background-image: url(../assets/img/background-decoration/background-streaksimple-top-lightgreen.png);
@@ -1633,8 +1657,13 @@ nav .navbar .rsvp-ribbon:hover .ribbon-text {
   top: 0px;
   right: -33%;
   rotate: 20deg;
-  transform: scaley(-1);
-  transform: scaleX(-1);
+  transform: scalex(-1) translateX(-40%);
+  opacity: 0;
+  transition: all 2s ease-out;
+}
+#attendance.scrolled .background-streak-bottom-1 {
+  opacity: 1;
+  transform: scaleX(-1) translatey(0);
 }
 #attendance .background-left-leaf {
   background-image: url(../assets/img/background-decoration/leaf-5-lightgreen.png);
@@ -1645,8 +1674,14 @@ nav .navbar .rsvp-ribbon:hover .ribbon-text {
   position: absolute;
   bottom: 0;
   left: -15%;
-  transform: scalex(1);
+  transform: scalex(1) translateY(40%);
   rotate: 100deg;
+  opacity: 0;
+  transition: all 2s ease-out;
+}
+#attendance.scrolled .background-left-leaf {
+  opacity: 1;
+  transform: scaleX(1) translatey(0);
 }
 #attendance .background-right-leaf {
   background-image: url(../assets/img/background-decoration/leaf-2-lightgreen.png);
@@ -1658,7 +1693,13 @@ nav .navbar .rsvp-ribbon:hover .ribbon-text {
   top: -55px;
   right: -28%;
   rotate: -5deg;
-  transform: scale(1, -1);
+  transform: scale(1, -1) translate(50%);
+  opacity: 0;
+  transition: all 2s ease-out;
+}
+#attendance.scrolled .background-right-leaf {
+  opacity: 1;
+  transform: scale(1, -1) translatey(0);
 }
 
 @media screen and (max-width: 768px) {
@@ -1729,204 +1770,204 @@ nav .navbar .rsvp-ribbon:hover .ribbon-text {
   */
 }
 #leaves #falling-leaves-container span:nth-child(1) {
-  animation: falling2 10s linear infinite;
-  animation-delay: 6.3s;
+  animation: falling1 10s linear infinite;
+  animation-delay: 2.9s;
 }
 #leaves #falling-leaves-container span:nth-child(2) {
   animation: falling1 10s linear infinite;
-  animation-delay: 3.8s;
+  animation-delay: 2.3s;
 }
 #leaves #falling-leaves-container span:nth-child(3) {
   animation: falling2 10s linear infinite;
-  animation-delay: 10.3s;
+  animation-delay: 6.4s;
 }
 #leaves #falling-leaves-container span:nth-child(4) {
-  animation: falling2 10s linear infinite;
-  animation-delay: 5.4s;
+  animation: falling1 10s linear infinite;
+  animation-delay: 10.1s;
 }
 #leaves #falling-leaves-container span:nth-child(5) {
-  animation: falling2 10s linear infinite;
-  animation-delay: 5.3s;
+  animation: falling1 10s linear infinite;
+  animation-delay: 3.4s;
 }
 #leaves #falling-leaves-container span:nth-child(6) {
-  animation: falling1 10s linear infinite;
-  animation-delay: 3.3s;
+  animation: falling2 10s linear infinite;
+  animation-delay: 2.3s;
 }
 #leaves #falling-leaves-container span:nth-child(7) {
-  animation: falling1 10s linear infinite;
-  animation-delay: 3.6s;
+  animation: falling2 10s linear infinite;
+  animation-delay: 10.7s;
 }
 #leaves #falling-leaves-container span:nth-child(8) {
   animation: falling1 10s linear infinite;
-  animation-delay: 8.9s;
+  animation-delay: 2.9s;
 }
 #leaves #falling-leaves-container span:nth-child(9) {
-  animation: falling1 10s linear infinite;
-  animation-delay: 1.3s;
+  animation: falling2 10s linear infinite;
+  animation-delay: 7.2s;
 }
 #leaves #falling-leaves-container span:nth-child(10) {
   animation: falling1 10s linear infinite;
-  animation-delay: 10.3s;
+  animation-delay: 7.2s;
 }
 #leaves #falling-leaves-container span:nth-child(11) {
-  animation: falling2 10s linear infinite;
+  animation: falling1 10s linear infinite;
   animation-delay: 8.3s;
 }
 #leaves #falling-leaves-container span:nth-child(12) {
   animation: falling1 10s linear infinite;
-  animation-delay: 3.9s;
+  animation-delay: 4.8s;
 }
 #leaves #falling-leaves-container span:nth-child(13) {
   animation: falling1 10s linear infinite;
-  animation-delay: 2.6s;
+  animation-delay: 5.7s;
 }
 #leaves #falling-leaves-container span:nth-child(14) {
-  animation: falling2 10s linear infinite;
-  animation-delay: 8.7s;
+  animation: falling1 10s linear infinite;
+  animation-delay: 7.4s;
 }
 #leaves #falling-leaves-container span:nth-child(15) {
-  animation: falling1 10s linear infinite;
-  animation-delay: 5.7s;
+  animation: falling2 10s linear infinite;
+  animation-delay: 5.6s;
 }
 #leaves #falling-leaves-container span:nth-child(16) {
   animation: falling1 10s linear infinite;
-  animation-delay: 8.6s;
+  animation-delay: 9.1s;
 }
 #leaves #falling-leaves-container span:nth-child(17) {
   animation: falling2 10s linear infinite;
-  animation-delay: 1.7s;
+  animation-delay: 4.7s;
 }
 #leaves #falling-leaves-container span:nth-child(18) {
-  animation: falling2 10s linear infinite;
-  animation-delay: 9.2s;
+  animation: falling1 10s linear infinite;
+  animation-delay: 9.1s;
 }
 #leaves #falling-leaves-container span:nth-child(19) {
-  animation: falling1 10s linear infinite;
-  animation-delay: 2.1s;
+  animation: falling2 10s linear infinite;
+  animation-delay: 5.7s;
 }
 #leaves #falling-leaves-container span:nth-child(20) {
-  animation: falling1 10s linear infinite;
-  animation-delay: 3.2s;
+  animation: falling2 10s linear infinite;
+  animation-delay: 1.4s;
 }
 #leaves #falling-leaves-container span:nth-child(21) {
   animation: falling2 10s linear infinite;
-  animation-delay: 2.7s;
+  animation-delay: 9.7s;
 }
 #leaves #falling-leaves-container span:nth-child(22) {
   animation: falling2 10s linear infinite;
-  animation-delay: 8.7s;
+  animation-delay: 6.9s;
 }
 #leaves #falling-leaves-container span:nth-child(23) {
-  animation: falling1 10s linear infinite;
-  animation-delay: 9.5s;
+  animation: falling2 10s linear infinite;
+  animation-delay: 9.1s;
 }
 #leaves #falling-leaves-container span:nth-child(24) {
   animation: falling2 10s linear infinite;
-  animation-delay: 2.4s;
+  animation-delay: 3.2s;
 }
 #leaves #falling-leaves-container span:nth-child(25) {
-  animation: falling1 10s linear infinite;
-  animation-delay: 7.1s;
+  animation: falling2 10s linear infinite;
+  animation-delay: 3.5s;
 }
 #leaves #falling-leaves-container span:nth-child(26) {
-  animation: falling2 10s linear infinite;
-  animation-delay: 2.3s;
+  animation: falling1 10s linear infinite;
+  animation-delay: 8.5s;
 }
 #leaves #falling-leaves-container span:nth-child(27) {
   animation: falling2 10s linear infinite;
-  animation-delay: 9.6s;
+  animation-delay: 9.8s;
 }
 #leaves #falling-leaves-container span:nth-child(28) {
   animation: falling2 10s linear infinite;
-  animation-delay: 3.7s;
+  animation-delay: 5.6s;
 }
 #leaves #falling-leaves-container span:nth-child(29) {
   animation: falling1 10s linear infinite;
-  animation-delay: 10.6s;
+  animation-delay: 10.9s;
 }
 #leaves #falling-leaves-container span:nth-child(30) {
-  animation: falling2 10s linear infinite;
-  animation-delay: 2.3s;
+  animation: falling1 10s linear infinite;
+  animation-delay: 10.3s;
 }
 #leaves #falling-leaves-container span:nth-child(31) {
   animation: falling1 10s linear infinite;
-  animation-delay: 3.2s;
+  animation-delay: 2.3s;
 }
 #leaves #falling-leaves-container span:nth-child(32) {
   animation: falling2 10s linear infinite;
-  animation-delay: 3.1s;
+  animation-delay: 5.6s;
 }
 #leaves #falling-leaves-container span:nth-child(33) {
-  animation: falling2 10s linear infinite;
-  animation-delay: 3.8s;
+  animation: falling1 10s linear infinite;
+  animation-delay: 2.2s;
 }
 #leaves #falling-leaves-container span:nth-child(34) {
   animation: falling2 10s linear infinite;
-  animation-delay: 7.8s;
+  animation-delay: 10.7s;
 }
 #leaves #falling-leaves-container span:nth-child(35) {
-  animation: falling1 10s linear infinite;
-  animation-delay: 4.7s;
+  animation: falling2 10s linear infinite;
+  animation-delay: 4.3s;
 }
 #leaves #falling-leaves-container span:nth-child(36) {
   animation: falling2 10s linear infinite;
-  animation-delay: 2.8s;
+  animation-delay: 3.3s;
 }
 #leaves #falling-leaves-container span:nth-child(37) {
   animation: falling2 10s linear infinite;
-  animation-delay: 2.8s;
+  animation-delay: 5.8s;
 }
 #leaves #falling-leaves-container span:nth-child(38) {
-  animation: falling1 10s linear infinite;
-  animation-delay: 6.5s;
+  animation: falling2 10s linear infinite;
+  animation-delay: 10.1s;
 }
 #leaves #falling-leaves-container span:nth-child(39) {
   animation: falling1 10s linear infinite;
-  animation-delay: 9.3s;
+  animation-delay: 3.1s;
 }
 #leaves #falling-leaves-container span:nth-child(40) {
-  animation: falling1 10s linear infinite;
-  animation-delay: 2.4s;
+  animation: falling2 10s linear infinite;
+  animation-delay: 7.6s;
 }
 #leaves #falling-leaves-container span:nth-child(41) {
   animation: falling1 10s linear infinite;
-  animation-delay: 5.2s;
+  animation-delay: 7.6s;
 }
 #leaves #falling-leaves-container span:nth-child(42) {
-  animation: falling1 10s linear infinite;
-  animation-delay: 9.7s;
+  animation: falling2 10s linear infinite;
+  animation-delay: 7.2s;
 }
 #leaves #falling-leaves-container span:nth-child(43) {
-  animation: falling2 10s linear infinite;
-  animation-delay: 3.9s;
+  animation: falling1 10s linear infinite;
+  animation-delay: 6.1s;
 }
 #leaves #falling-leaves-container span:nth-child(44) {
-  animation: falling2 10s linear infinite;
-  animation-delay: 8.4s;
+  animation: falling1 10s linear infinite;
+  animation-delay: 6.3s;
 }
 #leaves #falling-leaves-container span:nth-child(45) {
-  animation: falling2 10s linear infinite;
-  animation-delay: 5.4s;
+  animation: falling1 10s linear infinite;
+  animation-delay: 5.5s;
 }
 #leaves #falling-leaves-container span:nth-child(46) {
   animation: falling2 10s linear infinite;
-  animation-delay: 7.4s;
+  animation-delay: 2.1s;
 }
 #leaves #falling-leaves-container span:nth-child(47) {
-  animation: falling2 10s linear infinite;
-  animation-delay: 4.5s;
+  animation: falling1 10s linear infinite;
+  animation-delay: 2.5s;
 }
 #leaves #falling-leaves-container span:nth-child(48) {
-  animation: falling1 10s linear infinite;
-  animation-delay: 9.4s;
+  animation: falling2 10s linear infinite;
+  animation-delay: 3.7s;
 }
 #leaves #falling-leaves-container span:nth-child(49) {
   animation: falling1 10s linear infinite;
-  animation-delay: 4.7s;
+  animation-delay: 10.5s;
 }
 #leaves #falling-leaves-container span:nth-child(50) {
-  animation: falling1 10s linear infinite;
-  animation-delay: 4.9s;
+  animation: falling2 10s linear infinite;
+  animation-delay: 2.7s;
 }
 @keyframes falling1 {
   0% {
@@ -1934,7 +1975,7 @@ nav .navbar .rsvp-ribbon:hover .ribbon-text {
     opacity: 0.7;
   }
   100% {
-    transform: translateY(100vh) rotatez(144deg);
+    transform: translateY(100vh) rotatez(82deg);
     opacity: 0;
   }
 }
@@ -1944,7 +1985,7 @@ nav .navbar .rsvp-ribbon:hover .ribbon-text {
     opacity: 1;
   }
   100% {
-    transform: translateY(100vh) rotatez(-3deg);
+    transform: translateY(100vh) rotatez(-68deg);
     opacity: 0;
   }
 }
