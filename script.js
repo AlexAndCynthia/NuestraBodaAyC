@@ -147,6 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
     addIntersectionObserver('photo-data-bride'); 
     addIntersectionObserver('countdown-container');
     addIntersectionObserver('parents'); 
+    addIntersectionObserver('place'); 
     addIntersectionObserver('schedule'); 
     addIntersectionObserver('attendance'); 
     addIntersectionObserver('dev-name'); 
