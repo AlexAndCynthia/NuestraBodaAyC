@@ -70,6 +70,10 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('play-button').addEventListener('click', function() {
         var audio = document.getElementById('song');
         audio.play();
+        const secciones = document.querySelectorAll(".hidden-element");
+        secciones.forEach(seccion => {
+            seccion.style.display = "flex";
+        });
     });
 
     // COUNTDOWN
