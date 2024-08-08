@@ -151,7 +151,9 @@
     #place{
         height: auto;
         .container-place{
+            margin-bottom: 0;
             h1{
+                margin-top: 20px;
                 width: 90%;
             }
             transform: translatey(0px);
@@ -160,16 +162,21 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                width: 80%;
                 .info{
-                    width: 70%;
+                    width: 90%;
+                    height: auto;
                     padding: 20px;
                     p{
                         height: auto;
                         align-content: center;
                     }
+                    .info-sup{
+                        margin-bottom: 15px;
+                    }
                 }
                 #salon {
-                    width: 83%;
+                    width: 105%;
                     margin: 0;
                     height: auto;
                 }
