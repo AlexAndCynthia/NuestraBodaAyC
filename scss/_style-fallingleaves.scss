@@ -75,6 +75,23 @@
 
 @media screen and (max-width: 768px) {
     #leaves{
-        display: none;
+        //display: none;
+        #falling-leaves-container{
+            transform: translateY(-20px);
+            span{
+                display: inline-block;
+                background-image: url('../assets/icons/heart.png');
+                background-size:contain;
+                background-repeat: no-repeat;
+                width: 40px;
+                height: 40px;
+                @for $i from 1 through 150{
+                    &:nth-child(#{$i}){
+                        animation: falling+random(2) 10s linear infinite;
+                        animation-delay: random(15) + random(9)/10 + s;
+                    }
+                }
+            }
+        }
     }
 }
