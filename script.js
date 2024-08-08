@@ -70,6 +70,19 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('play-button').addEventListener('click', function() {
         var audio = document.getElementById('song');
         audio.play();
+
+        // Restaurar el estado de la música cuando la página se carga
+        window.onload = function() {
+            if (localStorage.getItem('musicPlaying') === 'true') {
+            audio.play();
+            }
+        }
+
+        // Guardar el estado de la música antes de salir
+        function saveMusicState() {
+            localStorage.setItem('musicPlaying', !audio.paused);
+        }
+
         const secciones = document.querySelectorAll(".hidden-element");
         secciones.forEach(seccion => {
             seccion.style.display = "flex";
