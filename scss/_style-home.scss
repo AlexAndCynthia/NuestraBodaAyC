@@ -126,5 +126,12 @@
                 height: 300px;
             }
         }
+        .tab{
+            top: 75vh;
+            right: 50%;
+            display: flex;
+            flex-direction: row;
+            transform: translate(50%,0);
+        }
     }
 }
