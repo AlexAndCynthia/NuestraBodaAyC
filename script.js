@@ -83,6 +83,14 @@ document.addEventListener('DOMContentLoaded', () => {
             localStorage.setItem('musicPlaying', !audio.paused);
         }
 
+        document.addEventListener('visibilitychange', function() {
+            if (document.hidden) {
+              audio.pause(); // Pausa la música si la pestaña no está activa
+            } else {
+              audio.play(); // Reanuda la música si la pestaña vuelve a estar activa
+            }
+        });
+
         const secciones = document.querySelectorAll(".hidden-element");
         secciones.forEach(seccion => {
             seccion.style.display = "flex";
