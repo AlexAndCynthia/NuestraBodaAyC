@@ -1105,6 +1105,7 @@ nav .navbar .rsvp-ribbon:hover .ribbon-text {
   }
   #parents .container-parents {
     width: 80%;
+    z-index: 10;
   }
   #parents .container-parents .husband-bride-parents {
     flex-direction: column;
@@ -1132,32 +1133,75 @@ nav .navbar .rsvp-ribbon:hover .ribbon-text {
   #parents .container-parents p {
     width: 100%;
     margin-top: 30px;
-    margin-bottom: 0;
+    margin-bottom: 30px;
   }
   #parents .background-leaf-left {
     width: 300px;
     height: 200px;
-    transform: scaleX(-1);
-    rotate: 90deg;
-    left: -90px;
-    bottom: 80px;
+    opacity: 1;
+    transform: translate(-40%, -20%) scale(1, -1) rotate(90deg);
   }
   #parents .background-leaf-right {
     width: 300px;
     height: 200px;
-    right: -90px;
-    bottom: 80px;
-    transform: rotate(90deg) scale(-1, -1);
+    opacity: 1;
+    transform: translate(40%, -20%) scale(-1, -1) rotate(90deg);
+  }
+  #parents.scrolled .background-leaf-left {
+    opacity: 1;
+    transform: translate(-40%, -20%) scale(1, -1) rotate(90deg);
+  }
+  #parents.scrolled .background-leaf-right {
+    opacity: 1;
+    transform: translate(40%, -20%) scale(-1, -1) rotate(90deg);
   }
   #parents .background-leaf-top-left {
     width: 300px;
     height: 200px;
     left: -110px;
+    opacity: 1;
+    transform: translate(0, 0) scalex(-1);
   }
   #parents .background-leaf-top-right {
     width: 300px;
     height: 200px;
     right: -110px;
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  #parents.scrolled .background-leaf-top-left {
+    opacity: 1;
+    transform: translate(0, 0) scalex(-1);
+  }
+  #parents.scrolled .background-leaf-top-right {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  #parents .background-leaf-left-center {
+    top: 50%;
+    left: -25%;
+    width: 500px;
+    height: 125px;
+    opacity: 0;
+    transform: translate(10%, -200%);
+    transition: all 1s ease-out;
+  }
+  #parents .background-leaf-right-center {
+    top: 50%;
+    right: -25%;
+    width: 500px;
+    height: 125px;
+    opacity: 0;
+    transform: translate(10%, 200%) scaley(-1);
+    transition: all 1s ease-out;
+  }
+  #parents.scrolled .background-leaf-left-center {
+    opacity: 1;
+    transform: translate(10%, -100%);
+  }
+  #parents.scrolled .background-leaf-right-center {
+    opacity: 1;
+    transform: translate(10%, 100%) scaley(-1);
   }
 }
 #place {
@@ -1907,203 +1951,203 @@ nav .navbar .rsvp-ribbon:hover .ribbon-text {
 }
 #leaves #falling-leaves-container span:nth-child(1) {
   animation: falling2 10s linear infinite;
-  animation-delay: 2.9s;
+  animation-delay: 6.9s;
 }
 #leaves #falling-leaves-container span:nth-child(2) {
   animation: falling2 10s linear infinite;
-  animation-delay: 5.4s;
+  animation-delay: 4.3s;
 }
 #leaves #falling-leaves-container span:nth-child(3) {
   animation: falling2 10s linear infinite;
-  animation-delay: 4.5s;
+  animation-delay: 1.5s;
 }
 #leaves #falling-leaves-container span:nth-child(4) {
-  animation: falling1 10s linear infinite;
-  animation-delay: 7.8s;
+  animation: falling2 10s linear infinite;
+  animation-delay: 9.9s;
 }
 #leaves #falling-leaves-container span:nth-child(5) {
-  animation: falling1 10s linear infinite;
-  animation-delay: 5.8s;
+  animation: falling2 10s linear infinite;
+  animation-delay: 5.6s;
 }
 #leaves #falling-leaves-container span:nth-child(6) {
   animation: falling2 10s linear infinite;
-  animation-delay: 9.6s;
+  animation-delay: 6.8s;
 }
 #leaves #falling-leaves-container span:nth-child(7) {
-  animation: falling1 10s linear infinite;
-  animation-delay: 3.8s;
+  animation: falling2 10s linear infinite;
+  animation-delay: 4.3s;
 }
 #leaves #falling-leaves-container span:nth-child(8) {
   animation: falling1 10s linear infinite;
-  animation-delay: 7.8s;
+  animation-delay: 6.6s;
 }
 #leaves #falling-leaves-container span:nth-child(9) {
-  animation: falling1 10s linear infinite;
-  animation-delay: 8.9s;
-}
-#leaves #falling-leaves-container span:nth-child(10) {
-  animation: falling2 10s linear infinite;
-  animation-delay: 6.4s;
-}
-#leaves #falling-leaves-container span:nth-child(11) {
-  animation: falling1 10s linear infinite;
-  animation-delay: 8.4s;
-}
-#leaves #falling-leaves-container span:nth-child(12) {
-  animation: falling1 10s linear infinite;
-  animation-delay: 1.5s;
-}
-#leaves #falling-leaves-container span:nth-child(13) {
-  animation: falling2 10s linear infinite;
-  animation-delay: 5.8s;
-}
-#leaves #falling-leaves-container span:nth-child(14) {
-  animation: falling1 10s linear infinite;
-  animation-delay: 7.2s;
-}
-#leaves #falling-leaves-container span:nth-child(15) {
-  animation: falling1 10s linear infinite;
-  animation-delay: 5.5s;
-}
-#leaves #falling-leaves-container span:nth-child(16) {
-  animation: falling1 10s linear infinite;
-  animation-delay: 8.5s;
-}
-#leaves #falling-leaves-container span:nth-child(17) {
-  animation: falling2 10s linear infinite;
-  animation-delay: 3.4s;
-}
-#leaves #falling-leaves-container span:nth-child(18) {
-  animation: falling1 10s linear infinite;
-  animation-delay: 8.3s;
-}
-#leaves #falling-leaves-container span:nth-child(19) {
-  animation: falling1 10s linear infinite;
-  animation-delay: 2.5s;
-}
-#leaves #falling-leaves-container span:nth-child(20) {
-  animation: falling2 10s linear infinite;
-  animation-delay: 5.9s;
-}
-#leaves #falling-leaves-container span:nth-child(21) {
-  animation: falling1 10s linear infinite;
-  animation-delay: 6.3s;
-}
-#leaves #falling-leaves-container span:nth-child(22) {
-  animation: falling2 10s linear infinite;
-  animation-delay: 8.9s;
-}
-#leaves #falling-leaves-container span:nth-child(23) {
-  animation: falling1 10s linear infinite;
-  animation-delay: 3.6s;
-}
-#leaves #falling-leaves-container span:nth-child(24) {
-  animation: falling2 10s linear infinite;
-  animation-delay: 9.3s;
-}
-#leaves #falling-leaves-container span:nth-child(25) {
-  animation: falling2 10s linear infinite;
-  animation-delay: 8.8s;
-}
-#leaves #falling-leaves-container span:nth-child(26) {
-  animation: falling2 10s linear infinite;
-  animation-delay: 6.7s;
-}
-#leaves #falling-leaves-container span:nth-child(27) {
-  animation: falling1 10s linear infinite;
-  animation-delay: 5.3s;
-}
-#leaves #falling-leaves-container span:nth-child(28) {
-  animation: falling2 10s linear infinite;
-  animation-delay: 10.4s;
-}
-#leaves #falling-leaves-container span:nth-child(29) {
-  animation: falling2 10s linear infinite;
-  animation-delay: 6.8s;
-}
-#leaves #falling-leaves-container span:nth-child(30) {
-  animation: falling2 10s linear infinite;
-  animation-delay: 5.1s;
-}
-#leaves #falling-leaves-container span:nth-child(31) {
-  animation: falling1 10s linear infinite;
-  animation-delay: 7.6s;
-}
-#leaves #falling-leaves-container span:nth-child(32) {
-  animation: falling1 10s linear infinite;
-  animation-delay: 8.3s;
-}
-#leaves #falling-leaves-container span:nth-child(33) {
-  animation: falling1 10s linear infinite;
-  animation-delay: 6.7s;
-}
-#leaves #falling-leaves-container span:nth-child(34) {
-  animation: falling2 10s linear infinite;
-  animation-delay: 8.6s;
-}
-#leaves #falling-leaves-container span:nth-child(35) {
-  animation: falling1 10s linear infinite;
-  animation-delay: 9.8s;
-}
-#leaves #falling-leaves-container span:nth-child(36) {
   animation: falling2 10s linear infinite;
   animation-delay: 9.2s;
 }
-#leaves #falling-leaves-container span:nth-child(37) {
-  animation: falling1 10s linear infinite;
-  animation-delay: 10.4s;
-}
-#leaves #falling-leaves-container span:nth-child(38) {
+#leaves #falling-leaves-container span:nth-child(10) {
   animation: falling2 10s linear infinite;
-  animation-delay: 7.2s;
+  animation-delay: 9.8s;
 }
-#leaves #falling-leaves-container span:nth-child(39) {
+#leaves #falling-leaves-container span:nth-child(11) {
+  animation: falling2 10s linear infinite;
+  animation-delay: 10.9s;
+}
+#leaves #falling-leaves-container span:nth-child(12) {
+  animation: falling2 10s linear infinite;
+  animation-delay: 5.9s;
+}
+#leaves #falling-leaves-container span:nth-child(13) {
   animation: falling1 10s linear infinite;
-  animation-delay: 8.1s;
+  animation-delay: 9.9s;
 }
-#leaves #falling-leaves-container span:nth-child(40) {
+#leaves #falling-leaves-container span:nth-child(14) {
   animation: falling1 10s linear infinite;
-  animation-delay: 4.4s;
+  animation-delay: 10.1s;
 }
-#leaves #falling-leaves-container span:nth-child(41) {
+#leaves #falling-leaves-container span:nth-child(15) {
+  animation: falling2 10s linear infinite;
+  animation-delay: 10.7s;
+}
+#leaves #falling-leaves-container span:nth-child(16) {
+  animation: falling2 10s linear infinite;
+  animation-delay: 10.5s;
+}
+#leaves #falling-leaves-container span:nth-child(17) {
   animation: falling1 10s linear infinite;
-  animation-delay: 7.4s;
+  animation-delay: 2.2s;
 }
-#leaves #falling-leaves-container span:nth-child(42) {
+#leaves #falling-leaves-container span:nth-child(18) {
   animation: falling2 10s linear infinite;
   animation-delay: 2.8s;
 }
-#leaves #falling-leaves-container span:nth-child(43) {
-  animation: falling1 10s linear infinite;
-  animation-delay: 2.4s;
-}
-#leaves #falling-leaves-container span:nth-child(44) {
+#leaves #falling-leaves-container span:nth-child(19) {
   animation: falling2 10s linear infinite;
-  animation-delay: 3.9s;
+  animation-delay: 3.5s;
 }
-#leaves #falling-leaves-container span:nth-child(45) {
+#leaves #falling-leaves-container span:nth-child(20) {
   animation: falling1 10s linear infinite;
-  animation-delay: 4.1s;
+  animation-delay: 6.7s;
 }
-#leaves #falling-leaves-container span:nth-child(46) {
+#leaves #falling-leaves-container span:nth-child(21) {
   animation: falling1 10s linear infinite;
-  animation-delay: 5.8s;
+  animation-delay: 10.5s;
 }
-#leaves #falling-leaves-container span:nth-child(47) {
-  animation: falling2 10s linear infinite;
-  animation-delay: 6.3s;
-}
-#leaves #falling-leaves-container span:nth-child(48) {
-  animation: falling2 10s linear infinite;
-  animation-delay: 1.5s;
-}
-#leaves #falling-leaves-container span:nth-child(49) {
+#leaves #falling-leaves-container span:nth-child(22) {
   animation: falling2 10s linear infinite;
   animation-delay: 6.6s;
 }
+#leaves #falling-leaves-container span:nth-child(23) {
+  animation: falling2 10s linear infinite;
+  animation-delay: 2.6s;
+}
+#leaves #falling-leaves-container span:nth-child(24) {
+  animation: falling2 10s linear infinite;
+  animation-delay: 10.7s;
+}
+#leaves #falling-leaves-container span:nth-child(25) {
+  animation: falling1 10s linear infinite;
+  animation-delay: 9.7s;
+}
+#leaves #falling-leaves-container span:nth-child(26) {
+  animation: falling1 10s linear infinite;
+  animation-delay: 8.3s;
+}
+#leaves #falling-leaves-container span:nth-child(27) {
+  animation: falling1 10s linear infinite;
+  animation-delay: 6.4s;
+}
+#leaves #falling-leaves-container span:nth-child(28) {
+  animation: falling2 10s linear infinite;
+  animation-delay: 7.8s;
+}
+#leaves #falling-leaves-container span:nth-child(29) {
+  animation: falling2 10s linear infinite;
+  animation-delay: 2.1s;
+}
+#leaves #falling-leaves-container span:nth-child(30) {
+  animation: falling2 10s linear infinite;
+  animation-delay: 1.6s;
+}
+#leaves #falling-leaves-container span:nth-child(31) {
+  animation: falling1 10s linear infinite;
+  animation-delay: 6.6s;
+}
+#leaves #falling-leaves-container span:nth-child(32) {
+  animation: falling2 10s linear infinite;
+  animation-delay: 2.4s;
+}
+#leaves #falling-leaves-container span:nth-child(33) {
+  animation: falling1 10s linear infinite;
+  animation-delay: 8.7s;
+}
+#leaves #falling-leaves-container span:nth-child(34) {
+  animation: falling1 10s linear infinite;
+  animation-delay: 8.2s;
+}
+#leaves #falling-leaves-container span:nth-child(35) {
+  animation: falling2 10s linear infinite;
+  animation-delay: 8.7s;
+}
+#leaves #falling-leaves-container span:nth-child(36) {
+  animation: falling2 10s linear infinite;
+  animation-delay: 6.8s;
+}
+#leaves #falling-leaves-container span:nth-child(37) {
+  animation: falling1 10s linear infinite;
+  animation-delay: 8.7s;
+}
+#leaves #falling-leaves-container span:nth-child(38) {
+  animation: falling1 10s linear infinite;
+  animation-delay: 1.4s;
+}
+#leaves #falling-leaves-container span:nth-child(39) {
+  animation: falling1 10s linear infinite;
+  animation-delay: 1.8s;
+}
+#leaves #falling-leaves-container span:nth-child(40) {
+  animation: falling1 10s linear infinite;
+  animation-delay: 8.6s;
+}
+#leaves #falling-leaves-container span:nth-child(41) {
+  animation: falling2 10s linear infinite;
+  animation-delay: 2.4s;
+}
+#leaves #falling-leaves-container span:nth-child(42) {
+  animation: falling2 10s linear infinite;
+  animation-delay: 7.2s;
+}
+#leaves #falling-leaves-container span:nth-child(43) {
+  animation: falling2 10s linear infinite;
+  animation-delay: 5.8s;
+}
+#leaves #falling-leaves-container span:nth-child(44) {
+  animation: falling1 10s linear infinite;
+  animation-delay: 7.5s;
+}
+#leaves #falling-leaves-container span:nth-child(45) {
+  animation: falling1 10s linear infinite;
+  animation-delay: 1.2s;
+}
+#leaves #falling-leaves-container span:nth-child(46) {
+  animation: falling1 10s linear infinite;
+  animation-delay: 7.9s;
+}
+#leaves #falling-leaves-container span:nth-child(47) {
+  animation: falling1 10s linear infinite;
+  animation-delay: 7.9s;
+}
+#leaves #falling-leaves-container span:nth-child(48) {
+  animation: falling2 10s linear infinite;
+  animation-delay: 10.4s;
+}
+#leaves #falling-leaves-container span:nth-child(49) {
+  animation: falling1 10s linear infinite;
+  animation-delay: 9.4s;
+}
 #leaves #falling-leaves-container span:nth-child(50) {
   animation: falling2 10s linear infinite;
-  animation-delay: 3.4s;
+  animation-delay: 6.1s;
 }
 @keyframes falling1 {
   0% {
@@ -2111,7 +2155,7 @@ nav .navbar .rsvp-ribbon:hover .ribbon-text {
     opacity: 0.7;
   }
   100% {
-    transform: translateY(100vh) rotatez(24deg);
+    transform: translateY(100vh) rotatez(43deg);
     opacity: 0;
   }
 }
@@ -2121,7 +2165,7 @@ nav .navbar .rsvp-ribbon:hover .ribbon-text {
     opacity: 1;
   }
   100% {
-    transform: translateY(100vh) rotatez(-39deg);
+    transform: translateY(100vh) rotatez(-171deg);
     opacity: 0;
   }
 }
