@@ -232,8 +232,14 @@
             .husband-bride{
                 flex-direction: column;
                 .photo-data{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
                     .photo{
                         width: 200px;
+                        border: 10px solid #DCDCDC;
                     }
                     h2{
                         margin-top: 0;
