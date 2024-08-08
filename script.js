@@ -145,6 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
     addIntersectionObserver('home-continue');
     addIntersectionObserver('photo-data-husband'); 
     addIntersectionObserver('photo-data-bride'); 
+    addIntersectionObserver('countdown-container');
     addIntersectionObserver('parents'); 
     addIntersectionObserver('schedule'); 
     addIntersectionObserver('attendance'); 
