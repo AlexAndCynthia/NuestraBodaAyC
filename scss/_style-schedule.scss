@@ -9,7 +9,7 @@
     overflow: hidden;
     .container-schedule{
         margin-top: 80px;
-        margin-bottom: 100px;
+        margin-bottom: 150px;
         display: flex;
         flex-direction: column;
         z-index: 4;
@@ -111,7 +111,7 @@
         left: 0;
 
         opacity: 0;
-        transform: translateX(-100%);
+        transform: translate(-50%,-100%);
         transition: all 1s ease-out;
     }
     &.scrolled .background-top-1 {
@@ -137,11 +137,15 @@
         height: 100%;
         position: absolute;
         top: -15%;
-        left: 0%;
+        left: -20%;
         rotate: 250deg;
-        transform: scaley(-1);
-        transform: scaleX(-1);
+        transform: translate(0px,-500px) scaleX(-1);
+        opacity: 0;
+        transition: all 2s ease-out;
+    }
+    &.scrolled .background-streak-top-1 {
         opacity: 0.5;
+        transform: translate(0,0) scaleX(-1);
     }
     .background-streak-bottom-1{
         background-image: url(../assets/img/background-decoration/background-streaksimple-top-lightgreen.png);
@@ -151,11 +155,15 @@
         height: 100%;
         position: absolute;
         top: 100px;
-        right: 0%;
+        right: -20%;
         rotate: 60deg;
-        transform: scaley(-1);
-        transform: scaleX(-1);
+        transform: translate(0,-30%) scaleX(-1);
+        opacity: 0;
+        transition: all 2s ease-out;
+    }
+    &.scrolled .background-streak-bottom-1 {
         opacity: 0.4;
+        transform: translate(0,0) scaleX(-1);
     }
     .background-left-leaf{
         background-image: url(../assets/img/background-decoration/leaf-5-lightgreen.png);
@@ -166,8 +174,14 @@
         position: absolute;
         bottom: 0;
         left: -20%;
-        transform: scalex(1);
+        transform: translate(50%,50%) scalex(1);
+        opacity: 0;
         rotate: 100deg;
+        transition: all 2s ease-out;
+    }
+    &.scrolled .background-left-leaf {
+        transform: scalex(1);
+        opacity: 1;
     }
     .background-right-leaf{
         background-image: url(../assets/img/background-decoration/branch-lightgreen.png);
@@ -176,10 +190,15 @@
         width: 50%;
         height: 25%;
         position: absolute;
-        top: -20px;
-        right: -28%;
+        top: -10px;
+        right: -40%;
         rotate: -5deg;
-        transform: scale(1, 1);
+        transform: translate(50%,-50%) scale(1, 1);
+        opacity: 0.7;
+        transition: all 2s ease-out;
+    }
+    &.scrolled .background-right-leaf {
+        transform: translate(0%,0%) scale(1,1);
         opacity: 0.7;
     }
     .wave{
