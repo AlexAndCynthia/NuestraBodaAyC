@@ -140,10 +140,20 @@
 
 @media screen and (max-width: 768px){
     #attendance{
+        width: 100%;
         .container-attendance{
             h1{
                 width: 80%;
             }
+        }
+        .background-left-leaf{
+            left: -200px;
+            width: 100%;
+        }
+        .background-right-leaf{
+            right: -30px;
+            top: -200px;
+            width: 60%;
         }
     }
 }
