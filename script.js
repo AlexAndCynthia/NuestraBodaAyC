@@ -173,6 +173,24 @@ document.addEventListener('DOMContentLoaded', () => {
         loadingScreen.style.display = 'none';
         mainContent.classList.add('show-content');
     });
-    
+
+    //FADE TRANSITION
+    const elements = document.querySelectorAll('.fade-in');
+
+    const checkVisibility = () => {
+        elements.forEach(el => {
+            const rect = el.getBoundingClientRect();
+            const isVisible = rect.top < (window.innerHeight*0.9) && rect.bottom > 0;
+
+            if (isVisible) {
+                el.classList.add('visible');
+            } else {
+                el.classList.remove('visible');
+            }
+        });
+    };
+
+    window.addEventListener('scroll', checkVisibility);
+    checkVisibility(); // Para activar/desactivar la animación en la carga inicial.
 });
 
