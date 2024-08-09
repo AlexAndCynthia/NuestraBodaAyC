@@ -45,6 +45,9 @@
                 z-index: 3;
             }
         }
+        #slide1, #slide2{
+            object-position: right;
+        }
     }
     .home-logo{
         position: absolute;
