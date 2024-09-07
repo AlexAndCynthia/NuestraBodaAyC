@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // COUNTDOWN
 
-    const countdownDate = new Date("Sept 07, 2024 16:00:00").getTime();
+    const countdownDate = new Date("Sept 07, 2024 17:00:00").getTime();
     
     function formatNumber(number) {
         return number < 10 ? `0${number}` : number;
@@ -124,7 +124,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (distance < 0) {
             clearInterval(interval);
-            document.getElementById("countdown").innerHTML = "¡Recién casados!";
+            document.getElementById("countdown-title").innerHTML = "¡Recién casados!";
+            document.getElementById("countdown").innerHTML = "";
         }
     }, 1000);
 
